@@ -1,0 +1,16 @@
+{
+    "manifest_version":3,
+    "name":"Youtube Ads Skip",
+    "description":"Youtube Ads Skip",
+    "version":"0.0.1",
+    "content_scripts":[{
+        "js":["script.js"],
+        "run_at":"document_idle",
+        "matches":["<all_urls>"]
+    }],
+    "permissions":["tabs","activeTab"],
+    "icons":{
+        "128":"shield-halved-solid.png"
+    }
+
+}
